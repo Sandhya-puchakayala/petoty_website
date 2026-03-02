@@ -8835,7 +8835,11 @@ table p {
 */
 .faves-collections-area {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.faves-collections-area .container {
+  padding-bottom: 30px;
 }
 
 .faves-collections-area .section-title .title {
@@ -8913,9 +8917,13 @@ table p {
 -----------------------------------------------------------------------
 */
 .shop-by-price-area {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 60px;
   background-color: #fff;
+}
+
+.shop-by-price-area .container {
+  padding-top: 30px;
 }
 
 .shop-by-price-area .section-title {
