@@ -9223,8 +9223,10 @@ table p {
 }
 
 .brand-item .logo-container {
-  width: 100%;
-  aspect-ratio: 1;
+  /* width: 100%; */
+  /* aspect-ratio: 1; */
+  width: 120px;
+  height: 120px;
   background-color: #f3f4f6;
   border-radius: 50%;
   display: flex;
@@ -9235,6 +9237,36 @@ table p {
   transition: all 0.3s ease;
   overflow: hidden;
   position: relative;
+  margin: 0 auto 15px;
+}
+
+.brands-marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.brands-marquee {
+  display: flex;
+  /* ✅ THIS MAKES IT HORIZONTAL */
+  align-items: center;
+  gap: 40px;
+  /* space between items */
+}
+
+.brands-marquee {
+  display: flex;
+  gap: 40px;
+  animation: scrollBrands 20s linear infinite;
+}
+
+@keyframes scrollBrands {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .brand-item .logo-container:before {
